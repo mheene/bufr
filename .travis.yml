@@ -1,0 +1,13 @@
+sudo: false
+
+language: python
+
+python: 3.4
+
+install:
+  - pip install -r upload_client/requirements.txt
+
+script:
+  python upload_client/bufr2txt.py test/ISMD01EDZW_201906181200.bufr > out
+  diff out test/reference_output.txt
+  
