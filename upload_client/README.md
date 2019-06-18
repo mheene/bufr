@@ -19,7 +19,7 @@ pip install -r requirements.txt
 
 
 # Usage:
-python bufr2txt.py <Input BUFR>
+python bufr2txt.py `<Input BUFR>`
 
 
 
